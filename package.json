@@ -1,0 +1,58 @@
+{
+  "name": "postcss-hex-gamut",
+  "version": "0.4.0",
+  "description": "PostCSS plugin to use HEX color relative to a gamut, like CSS color(colorspace c1 c2 c3).",
+  "type": "module",
+  "author": "Doko Zero <17993323+dokozero@users.noreply.github.com>",
+  "license": "MIT",
+  "repository": "dokozero/postcss-hex-gamut",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "postcss-hex-gamut",
+    "gamut"
+  ],
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "unit": "node --test index.test.js",
+    "test": "npm run unit && eslint .",
+    "eslint-checks": "pnpm exec eslint \"./src/**/*\"",
+    "type-checks": "tsc --noEmit",
+    "all-checks": "pnpm eslint-checks && pnpm type-checks",
+    "tsc-watch": "pnpm exec tsc --watch",
+    "build": "pnpm exec tsc"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.27"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@types/node": "^22.15.17",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint": "^9.26.0",
+    "globals": "^16.1.0",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ]
+  }
+}
