@@ -1,6 +1,6 @@
 {
   "name": "postcss-hex-gamut",
-  "version": "0.4.0",
+  "version": "0.1.1",
   "description": "PostCSS plugin to use HEX color relative to a gamut, like CSS color(colorspace c1 c2 c3).",
   "type": "module",
   "author": "Doko Zero <17993323+dokozero@users.noreply.github.com>",
